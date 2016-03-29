@@ -29,4 +29,4 @@ def line_follow_time(time):
     try:
         timeout(time)(line_follow)()
     except TimeoutError:
-        pass #intended behaviour
+        break
